@@ -60,7 +60,7 @@ public class Persona {
      * Añade múltiples mensajes a la lista de mensajes del usuario.
      * @param mensajes la lista de mensajes a añadir
      */
-    public void añadirMensajesTodos(List<Mensaje> mensajes) {
+    public void anadirMensajesTodos(List<Mensaje> mensajes) {
         this.mensajesUsuario.addAll(mensajes);
     }
 
@@ -76,18 +76,34 @@ public class Persona {
         return estemensaje;
     }
 
+    /**
+     * Obtiene el número de teléfono de la persona.
+     * @return el número de teléfono de la persona
+     */
     public int getNumPersona() {
         return numeroTelefono;
     }
 
+    /**
+     * Obtiene el nombre de la persona.
+     * @return el nombre de la persona
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     * Obtiene la lista de contactos de la persona.
+     * @return la lista de contactos de la persona
+     */
     public List<Persona> getContactos() {
         return contactos;
     }
 
+    /**
+     * Obtiene la lista de mensajes del usuario.
+     * @return la lista de mensajes del usuario
+     */
     public List<Mensaje> getMensajesUsuario() {
         return mensajesUsuario;
     }

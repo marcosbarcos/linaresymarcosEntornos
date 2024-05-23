@@ -17,24 +17,43 @@ public abstract class Mensaje {
         this.destinatario = destinatario;
     }
 
+    /**
+     * Obtiene el remitente del mensaje.
+     * @return el remitente del mensaje
+     */
     public Persona getRemitente() {
         return remitente;
     }
 
+    /**
+     * Obtiene el destinatario del mensaje.
+     * @return el destinatario del mensaje
+     */
     public Persona getDestinatario() {
         return destinatario;
     }
 
+    /**
+     * Establece el remitente del mensaje.
+     * @param remitente el remitente del mensaje
+     */
     public void setRemitente(Persona remitente) {
         this.remitente = remitente;
     }
 
+    /**
+     * Establece el destinatario del mensaje.
+     * @param destinatario el destinatario del mensaje
+     */
     public void setDestinatario(Persona destinatario) {
         this.destinatario = destinatario;
     }
-    
-    public abstract void imprimirContenido();
-    
+
+    /**
+     * Devuelve una representación en cadena del mensaje.
+     * Este método debe ser implementado por las subclases.
+     * @return una cadena que representa el mensaje
+     */
     @Override
     public abstract String toString();
 }

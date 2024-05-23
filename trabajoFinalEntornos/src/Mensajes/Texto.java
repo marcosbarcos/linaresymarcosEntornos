@@ -17,18 +17,28 @@ public class Texto extends Mensaje {
         this.SSM = SSM;
     }
 
+    /**
+     * Obtiene el contenido del mensaje de texto.
+     * @return el contenido del mensaje de texto
+     */
     public String getSSM() {
         return SSM;
     }
 
+    /**
+     * Establece el contenido del mensaje de texto.
+     * @param SSM el contenido del mensaje de texto
+     */
     public void setSSM(String SSM) {
         this.SSM = SSM;
     }
-    
+
+    /**
+     * Imprime el contenido del mensaje de texto.
+     */
     public void imprimirContenido() {
         System.out.println(this.SSM);
     }
-    
     @Override
     public String toString() {
         return "Texto{" +
