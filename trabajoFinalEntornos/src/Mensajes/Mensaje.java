@@ -32,7 +32,9 @@ public abstract class Mensaje {
     public void setDestinatario(Persona destinatario) {
         this.destinatario = destinatario;
     }
-
+    
+    public abstract void imprimirContenido();
+    
     @Override
     public abstract String toString();
 }
