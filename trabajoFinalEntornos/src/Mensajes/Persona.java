@@ -36,7 +36,7 @@ public class Persona {
      * Añade un contacto a la lista de contactos de la persona.
      * @param persona la persona a añadir como contacto
      */
-    public void añadirContacto(Persona persona) {
+    public void anadirContacto(Persona persona) {
         this.contactos.add(persona);
     }
 
@@ -76,7 +76,7 @@ public class Persona {
         return estemensaje;
     }
 
-    public int getNumeroTelefono() {
+    public int getNumPersona() {
         return numeroTelefono;
     }
 
